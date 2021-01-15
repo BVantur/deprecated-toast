@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DeprecatedToast</string>
+    <string name="show_regular_toast">Show Regular Toast</string>
+    <string name="show_success_toast">Show Success Toast</string>
+    <string name="show_error_toast">Show Error Toast</string>
+    <string name="show_warning_toast">Show Warning Toast</string>
+    <string name="regular_message">Regular message</string>
+    <string name="error_message">Error message</string>
+    <string name="success_message">Success message</string>
+    <string name="warning_message">Warning message</string>
+</resources>
