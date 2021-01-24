@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         binding.clickListener = this
+        setSupportActionBar(binding.toolbar)
     }
 
     override fun onClick(v: View?) {
