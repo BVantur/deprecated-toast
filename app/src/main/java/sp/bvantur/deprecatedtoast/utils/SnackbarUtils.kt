@@ -41,7 +41,7 @@ object SnackbarUtils {
 }
 
 class SimpleCustomSnackbar(parent: ViewGroup, content: View) :
-    BaseTransientBottomBar<SimpleCustomSnackbar?>(
+    BaseTransientBottomBar<SimpleCustomSnackbar>(
         parent,
         content,
         object : com.google.android.material.snackbar.ContentViewCallback {
