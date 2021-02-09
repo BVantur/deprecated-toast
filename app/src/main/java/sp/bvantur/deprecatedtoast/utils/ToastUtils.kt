@@ -13,6 +13,10 @@ object ToastUtils {
     private const val message = "Toast messages with custom views are not supported anymore. Please use SnackbarUtils or create a regular Toast."
     private const val imports = "sp.bvantur.deprecatedtoast.utils"
 
+    @Deprecated(
+        message = message,
+        replaceWith = ReplaceWith("SnackbarUtils.showRegular(activity, textMessage)", imports),
+        level = DeprecationLevel.WARNING)
     fun showRegular(activity: Activity, textMessage: String) {
         show(activity, textMessage)
     }
@@ -28,7 +32,7 @@ object ToastUtils {
     @Deprecated(
         message = message,
         replaceWith = ReplaceWith("SnackbarUtils.showError(activity, textMessage)", imports),
-        level = DeprecationLevel.ERROR)
+        level = DeprecationLevel.WARNING)
     fun showError(activity: Activity, textMessage: String) {
         show(activity, textMessage, Color.RED)
     }
@@ -36,7 +40,7 @@ object ToastUtils {
     @Deprecated(
         message = message,
         replaceWith = ReplaceWith("SnackbarUtils.showWarning(activity, textMessage)", imports),
-        level = DeprecationLevel.HIDDEN)
+        level = DeprecationLevel.WARNING)
     fun showWarning(activity: Activity, textMessage: String) {
         show(activity, textMessage, Color.argb(255, 255, 165, 0))
     }
