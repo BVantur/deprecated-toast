@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id ?: return) {
             R.id.btnShowRegularToast -> ToastUtils.showRegular(this, getString(R.string.regular_message))
-            R.id.btnShowErrorToast -> ToastUtils.showError(this, getString(R.string.error_message))
             R.id.btnShowSuccessToast -> ToastUtils.showSuccess(this, getString(R.string.success_message))
+            R.id.btnShowErrorToast -> ToastUtils.showError(this, getString(R.string.error_message))
             R.id.btnShowWarningToast -> ToastUtils.showWarning(this, getString(R.string.warning_message))
         }
     }

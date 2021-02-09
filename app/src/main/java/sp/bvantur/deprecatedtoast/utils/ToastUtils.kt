@@ -9,18 +9,34 @@ import sp.bvantur.deprecatedtoast.R
 import sp.bvantur.deprecatedtoast.databinding.LayoutCustomToastBinding
 
 object ToastUtils {
+
+    private const val message = "Toast messages with custom views are not supported anymore. Please use SnackbarUtils or create a regular Toast."
+    private const val imports = "sp.bvantur.deprecatedtoast.utils"
+
     fun showRegular(activity: Activity, textMessage: String) {
         show(activity, textMessage)
     }
 
+    @Deprecated(
+        message = message,
+        replaceWith = ReplaceWith("SnackbarUtils.showSuccess(activity, textMessage)", imports),
+        level = DeprecationLevel.WARNING)
     fun showSuccess(activity: Activity, textMessage: String) {
         show(activity, textMessage, Color.GREEN)
     }
 
+    @Deprecated(
+        message = message,
+        replaceWith = ReplaceWith("SnackbarUtils.showError(activity, textMessage)", imports),
+        level = DeprecationLevel.ERROR)
     fun showError(activity: Activity, textMessage: String) {
         show(activity, textMessage, Color.RED)
     }
 
+    @Deprecated(
+        message = message,
+        replaceWith = ReplaceWith("SnackbarUtils.showWarning(activity, textMessage)", imports),
+        level = DeprecationLevel.HIDDEN)
     fun showWarning(activity: Activity, textMessage: String) {
         show(activity, textMessage, Color.argb(255, 255, 165, 0))
     }
