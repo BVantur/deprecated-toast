@@ -5,4 +5,4 @@ This project is created as an example for my Medium article that can be found [h
 
 
 ## :video_camera: Video
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/nhyLpg6VtB8)
+[![Watch the video](https://i.ytimg.com/vi/nhyLpg6VtB8/hqdefault.jpg)](https://youtu.be/nhyLpg6VtB8)
